@@ -1,0 +1,296 @@
+/* Cinzel Decorative */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+/* Tapestry */
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+/* Nova Script */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Script&display=swap');
+
+/* Unicial Antiqua */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+/* Trade Winds */
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+/* Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+/* El Messiri */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.landing-page{
+    background: linear-gradient(45deg,rgba(19, 11, 18, 0.885),rgba(252, 22, 252, 0.39)), url('/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    position: relative;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 50px;
+}
+.icon{
+    position: relative;
+    animation: anim2 4s;
+}
+.brand{
+    position: relative;
+    animation: anim1 4s;
+}
+@keyframes anim1 {
+    from{
+        left: -200px;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes anim2 {
+    from{
+        right: -220px;
+    }
+    to{
+        right: 0;
+    }
+}
+.brand h1{
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Uncial Antiqua', cursive;
+    font-weight: 100;
+    color: orchid;
+}
+
+.logo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.banner{
+    color: aliceblue;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    margin-top: 70px;
+}
+.banner p{
+    font-size: 25px;
+    color: lemonchiffon;
+    margin-bottom: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.banner h1{
+    font-size: 60px;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-family: 'Nova Script', cursive;
+    color: darksalmon;
+}
+.banner a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: salmon;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+}
+.banner a:active{
+    background: none;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+}
+.cars{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 120px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 150px;
+    animation: anim3 4s;
+    overflow: hidden;
+}
+@keyframes anim3{
+    from{
+        bottom: -200px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+.cars img{
+    width: 200px;
+    height: 150px;
+}
+
+.new-launch{
+    min-height: 100%;
+    background: linear-gradient(90deg,black,rgb(0, 0, 0),rgba(255, 255, 255, 0)), url('/images/new-model.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.m-name{
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 40px;
+    font-family: 'Tapestry', cursive;
+    font-weight: 100;
+}
+.tag{
+    width: 40%;
+    margin: 0 50px;
+}
+.tag h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: salmon;
+    position: relative;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.tag p{
+    margin-top: 40px;
+    padding: 5px 10px;
+    width: max-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    background: salmon;
+    color: black;
+    font-weight: 800;
+    font-family: 'Trade Winds', cursive;
+    animation: textclip 2s infinite;
+}
+@keyframes textclip {
+    from{
+        letter-spacing: -25px;
+    }
+    to{
+        letter-spacing: 0px;
+    }
+}
+
+
+.functions{
+    padding: 6rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1rem;
+    align-items: center;
+    height: 100%;
+}
+.element{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    font-family: 'El Messiri', sans-serif;    
+}
+
+.element img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid goldenrod;
+    border-radius: 50%;
+    margin: 0;
+    padding:5px;
+}
+.element .desc p:first-child{
+    font-size: 25px;
+    color: goldenrod;
+}
+.fun2 img{
+    border: 3px solid lightblue;
+}
+.fun2 .desc p:first-child{
+    color: lightblue;
+}
+.fun3 img{
+    border: 3px solid lightsalmon;
+}
+.fun3 .desc p:first-child{
+    color: lightsalmon;
+}
+.fun4 img{
+    border: 3px solid lightgreen;
+}
+.fun4 .desc p:first-child{
+    color: lightgreen;
+}
+.element .desc{
+    margin-left: 1rem;
+}
+.element .desc p{
+    color: rgb(15, 17, 19);
+}
+.model{
+    
+    position: relative;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 100%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+}
+.title h2{
+    transform: rotate(270deg);
+    font-size: 80px;
+    white-space: nowrap;
+    color: aliceblue;
+    font-family: 'Nova Script', cursive;
+}
+.feat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 370px 370px;
+    position: relative;
+}
+.feat div{
+    position: relative;
+}
+.feat img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.feat p{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    background: rgba(221, 160, 221, 0.478);
+    padding: 3px 15px;
+    margin: 15px;
+    font-family: 'El Messiri', sans-serif;
+    text-transform: capitalize;
+}
